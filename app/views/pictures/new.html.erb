@@ -1,5 +1,9 @@
-<h1>New picture</h1>
+<p class="title">New Picture</p>
+<p class="nav">
+  <%= link_to 'Back', pictures_path %>
+</p>
 
-<%= render 'form' %>
+<div class="post dark_shadow">
+  <%= render 'form' %>
+</div>
 
-<%= link_to 'Back', pictures_path %>
