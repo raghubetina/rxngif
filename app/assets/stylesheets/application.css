@@ -19,6 +19,12 @@ body {
 	padding: 40px;
 }
 
+#notice {
+	margin-top: 20px;
+	color: green;
+	text-align: center;
+}
+
 #heading {
 	text-align: center;
 }
