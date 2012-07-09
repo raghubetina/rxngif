@@ -39,6 +39,7 @@ body {
 .nav {
 	text-align: center;
 	margin-top: 20px;
+	font-size: large;
 }
 
 .title {
@@ -50,7 +51,7 @@ body {
 }
 
 a {
-	color: #999999;
+	color: #CCCCCC;
 	text-decoration: none;
 }
 
