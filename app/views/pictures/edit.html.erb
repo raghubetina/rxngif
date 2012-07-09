@@ -1,0 +1,12 @@
+<p class="title">Editing Picture #<%= @picture.id %></p>
+<p class="nav">
+  <%= link_to 'Show', @picture %> |
+  <%= link_to 'Back', pictures_path %>
+</p>
+
+<div class="post dark_shadow">
+  <%= render 'form' %>
+</div>
+
+
+

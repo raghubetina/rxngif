@@ -1,0 +1,98 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require reset
+ *= require_self
+ *= require_tree .
+*/
+
+body {
+  background-image: url('/assets/low_contrast_linen.png');
+	font-family: 'Oswald', sans-serif;
+	padding: 40px;
+}
+
+#heading {
+	text-align: center;
+}
+
+#logo {
+	font-size: xx-large;
+	color: #CCCCCC;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.nav {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.title {
+	text-align: center;
+	font-size: x-large;
+	margin-top: 20px;
+	color: #CCCCCC;
+	text-shadow: 1px 1px 1px #000;
+}
+
+a {
+	color: #999999;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #660000;
+}
+
+.non_favorite {
+	border: 5px #999999 solid;
+}
+
+.favorite {
+	border: 5px #660000 solid;
+}
+
+.post {
+	text-align: center;
+	width: 520px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	padding: 20px;
+	border-radius: 20px;
+	
+  /* *****Gradient***** */
+  background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #eeeeee 0%, #595959 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#eeeeee), color-stop(100%,#595959)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  #eeeeee 0%,#595959 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  #eeeeee 0%,#595959 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  #eeeeee 0%,#595959 100%); /* IE10+ */
+	background: linear-gradient(135deg,  #eeeeee 0%,#595959 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#595959',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.dark_shadow {
+	-webkit-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.9);
+	-moz-box-shadow:    7px 7px 5px rgba(50, 50, 50, 0.9);
+	box-shadow:         7px 7px 5px rgba(50, 50, 50, 0.9);
+}
+
+.note {
+	margin-top: 15px;
+	font-size: large;
+}
+
+.links {
+	color: #999999;
+	margin-top: 15px;
+	text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+}

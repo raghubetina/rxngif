@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p class="title">Showing Picture #<%= @picture.id %></p>
+<p class="nav">
+  <%= link_to 'Edit', edit_picture_path(@picture) %> |
+  <%= link_to 'Back', pictures_path %>
+</p>
+
+<div class="post dark_shadow">
+  <%= image_tag @picture.url, width: "480px", class: @picture.favorite ? "favorite" : "non_favorite" %>
+  <p class="note">Url - <%= @picture.url %></p>
+  <p class="note">Note - <%= @picture.note %></p>
+  <p class="note">Favorite - <%= @picture.favorite %></p>
+</div>
+
+

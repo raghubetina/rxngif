@@ -1,0 +1,11 @@
+
+
+<p class="nav"><%= link_to 'Add A New Picture', new_picture_path %></p>
+
+<% @pictures.each do |picture| %>
+  <div class="post dark_shadow">
+    <%= image_tag picture.url, width: "480px", class: picture.favorite ? "favorite" : "non_favorite" %>
+    <p class="note"><%= picture.note %></p>
+    <p class="links"><%= link_to 'Show', picture %> | <%= link_to 'Edit', edit_picture_path(picture) %> | <%= link_to 'Destroy', picture, confirm: 'Are you sure?', method: :delete %></p>
+  </div>
+<% end %>
