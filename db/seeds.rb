@@ -5,3 +5,18 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+pictures = [
+  { url: "http://i.imgur.com/hopbS.gif",
+    note: "I'm intrigued",
+    favorite: true
+  },
+  { url: "http://media.tumblr.com/tumblr_m6kiagpmWJ1rnvwt1.gif",
+    note: "Story of my life",
+    favorite: false
+  }
+]
+
+pictures.each do |picture|
+  Picture.create picture
+end
