@@ -94,8 +94,10 @@ a:hover {
 }
 
 .note {
-	margin-top: 15px;
+	color: #000000;
 	font-size: large;
+	margin-top: 15px;
+	text-shadow: 0px 1px 0px rgba(255,255,255,.5);
 }
 
 .links {
